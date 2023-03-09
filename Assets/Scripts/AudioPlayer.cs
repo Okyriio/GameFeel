@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(AudioSource))]
-    public class AudioPlayer : MonoBehaviour
-    {
+public class AudioPlayer : MonoBehaviour
+ {
         // Start is called before the first frame update
         [SerializeField] private List<AudioClip> _audioClips;
         public AudioSource _audioSource;
@@ -22,4 +22,4 @@ using UnityEngine;
             _audioSource.clip = clip;
             _audioSource.Play();
         }
-    }
+ }

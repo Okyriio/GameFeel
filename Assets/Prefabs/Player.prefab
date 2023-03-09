@@ -16,10 +16,9 @@ GameObject:
   - component: {fileID: 1810891353}
   - component: {fileID: 1810891352}
   - component: {fileID: 6928117721946235619}
-  - component: {fileID: 7938287307717961110}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -282,18 +281,6 @@ MonoBehaviour:
   _maxHealthPoints: 2
   _healthPoints: 2
   _destroyWhenKilled: 0
---- !u!114 &7938287307717961110
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7417740701155473238}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79b49fab97c14e84589a53a71de9d5d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &3444938072301539962
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -349,6 +336,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground Check
       objectReference: {fileID: 0}
+    - target: {fileID: 7296572916329587989, guid: 8b0a9c8dac1de474780715f3b79b8584, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b0a9c8dac1de474780715f3b79b8584, type: 3}
 --- !u!1 &5371741590975887215 stripped
@@ -367,8 +358,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.2003101, y: 0.64658743, z: 1}
-  m_Center: {x: -0.0000003871549, y: 0.17670645, z: 0}
+  m_Size: {x: 1.2003101, y: 1.2942065, z: 1}
+  m_Center: {x: -0.00000035762787, y: 0.500516, z: 0}
 --- !u!4 &7506763567317749844 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5180126235422949934, guid: 8b0a9c8dac1de474780715f3b79b8584, type: 3}
