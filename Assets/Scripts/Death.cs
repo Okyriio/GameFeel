@@ -6,6 +6,7 @@ public class Death : MonoBehaviour
 {
     // Start is called before the first frame update
     private Health _health;
+   
     [SerializeField] private ScreenShake _cam;
     
     public ScreenShake Cam
@@ -16,6 +17,7 @@ public class Death : MonoBehaviour
 
     void Start()
     {
+       
         _health = GetComponent<Health>();
        
     }

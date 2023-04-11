@@ -25,9 +25,10 @@ public class Health : MonoBehaviour
     public bool CanReceiveDamage { get; set; } = true;
     public bool IsDead => _healthPoints <= 0;
     public int HealthPoints => _healthPoints;
-
+    public EnemyController _ec;
     private void Awake()
     {
+        _ec = GetComponent<EnemyController>();
         _rb = GetComponent<Rigidbody2D>();
         _healthPoints = _maxHealthPoints;
     }
@@ -48,6 +49,7 @@ public class Health : MonoBehaviour
         if (!CanReceiveDamage) return;
 
         _healthPoints -= hurtAmount;
+        _ec.TakeDamage();
         OnHurt?.Invoke(attackerTransform);
 
         if (!IsDead) return;
